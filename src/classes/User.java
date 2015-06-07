@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by Общий on 05.06.2015.
  */
-public class User {
+ public class User {
 
     private static Scanner input = new Scanner(System.in);
 
@@ -17,12 +17,12 @@ public class User {
     public String surname;
     private String password;
 
-    private ArrayList<User> users = new ArrayList<User>();
+    public ArrayList<User> users = new ArrayList<User>();
     private ArrayList<Event> events = new ArrayList<Event>();
     private ArrayList<Business> businesses = new ArrayList<Business>();
 
     public User(String name, String password) {
-        this.name = name;
+        this.login = name;
         this.password = password;
     }
 

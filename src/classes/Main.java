@@ -27,9 +27,9 @@ public class Main {
         switch(action) {
             case 1:
                 System.out.println("Enter name: ");
-                String inputLogin=input.nextLine();
+                String inputLogin=input.next();
                 System.out.println("Enter password: ");
-                String inputPass=input.nextLine();
+                String inputPass=input.next();
                 signIn(inputLogin, inputPass);
                 break;
             case 2:

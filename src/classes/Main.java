@@ -35,7 +35,7 @@ public class Main {
 
         switch (action) {
             case 1:
-                System.out.println("Enter name: ");
+                System.out.println("Enter login: ");
                 String inputLogin = input.next();
                 System.out.println("Enter password: ");
                 String inputPass = input.next();
@@ -62,12 +62,11 @@ public class Main {
                 break;
             }
             f = 1;
-            System.out.println(curUser.getLogin());
             if (curUser.getLogin().equals(inputLogin)) {
                 if (curUser.getPassword().equals(inputPass)) {
                     log = 1;
                     loginUser = curUser;
-                    System.out.println("Welcome, " + curUser.name + "!");
+                    System.out.println("Welcome, " + curUser.login + "!");
                     break;
                 }
             }
@@ -85,9 +84,12 @@ public class Main {
 
 
     private static void signUp() {
-        String login = input.nextLine();
-        String pass = input.nextLine();
+        System.out.println("Enter login: ");
+        String login = input.next();
+        System.out.println("Enter password: ");
+        String pass = input.next();
         new User(login, pass);
+        users.add(new User(login, pass));
         signIn(login, pass);
     }
 

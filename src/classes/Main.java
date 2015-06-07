@@ -12,10 +12,10 @@ public class Main {
 
     private static Scanner input = new Scanner(System.in);
     private static User loginUser;
-    private static int log=0;
+    private static int log = 0;
     private static ArrayList<User> users = new ArrayList<User>();
 
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args) throws FileNotFoundException, MyException {
         users.add(new User("Ivan", "12345"));
         users.add(new User("Dima", "dimadima"));
         users.add(new User("Nikita", "432333"));
@@ -24,7 +24,14 @@ public class Main {
         System.out.println("What do you want?");
         System.out.println("1. Sign in.");
         System.out.println("2. Sign up.");
-            int action = input.nextInt();
+        int action = input.nextInt();
+        try {
+            comp(action);
+        } catch (MyException e) {
+            System.out.println(action + ">2");
+            System.out.println("Normal exit");
+        }
+
 
         switch (action) {
             case 1:
@@ -44,36 +51,37 @@ public class Main {
     }
 
     private static void signIn(String inputLogin, String inputPass) {
-        int f=0;
+        int f = 0;
         for (User curUser : users) {
 
             try {
                 exist("db.txt");
-            }
-            catch(FileNotFoundException e){
+            } catch (FileNotFoundException e) {
                 System.out.println("Database file isn't found");
-                f=0;
+                f = 0;
                 break;
             }
-            f=1;
-                System.out.println(curUser.getLogin());
-                if (curUser.getLogin().equals(inputLogin)) {
-                    if (curUser.getPassword().equals(inputPass)) {
-                        log=1;
-                        loginUser = curUser;
-                        System.out.println("Welcome, " + curUser.name + "!");
-                        break;
-                    }}}
-                        if (f==0) {
-                        return;}
-                        if (log==0) {
-                            System.out.println("ERROR. Failed login or password");
-                        return;}
-
-
-
+            f = 1;
+            System.out.println(curUser.getLogin());
+            if (curUser.getLogin().equals(inputLogin)) {
+                if (curUser.getPassword().equals(inputPass)) {
+                    log = 1;
+                    loginUser = curUser;
+                    System.out.println("Welcome, " + curUser.name + "!");
+                    break;
+                }
+            }
+        }
+        if (f == 0) {
+            return;
+        }
+        if (log == 0) {
+            System.out.println("ERROR. Failed login or password");
+            return;
         }
 
+
+    }
 
 
     private static void signUp() {
@@ -82,10 +90,16 @@ public class Main {
         new User(login, pass);
         signIn(login, pass);
     }
+
     private static void exist(String fileName) throws FileNotFoundException {
         File file = new File(fileName);
-        if (!file.exists()){
+        if (!file.exists()) {
             throw new FileNotFoundException(file.getName());
         }
+    }
+
+    static void comp(int a) throws MyException {
+        if (a > 2)
+            throw new MyException();
     }
 }

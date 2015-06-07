@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97becebc-d525-431b-b871-86f6859f4f4b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Общий\Documents\GitHub\organizer\organizer" afterPath="" />
-      <change type="MODIFICATION" beforePath="C:\Users\Общий\Documents\GitHub\organizer\out\production\organizer\classes\Main.class" afterPath="C:\Users\Общий\Documents\GitHub\organizer\out\production\organizer\classes\Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/organizer/classes/User.class" afterPath="$PROJECT_DIR$/out/production/organizer/classes/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/classes/BNException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/classes/MyException.java" />
+      <change type="DELETED" beforePath="C:\Users\Общий\Documents\GitHub\organizer\db.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/Main.java" afterPath="$PROJECT_DIR$/src/classes/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/User.java" afterPath="$PROJECT_DIR$/src/classes/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="organizer.iws" />
@@ -35,23 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5579196">
+              <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#376#382#0" expanded="true" />
+                <element signature="e#378#384#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3711584">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,6 +118,9 @@
         <option value="$PROJECT_DIR$/src/classes/Event.java" />
         <option value="$PROJECT_DIR$/src/classes/Business.java" />
         <option value="$PROJECT_DIR$/src/classes/User.java" />
+        <option value="$PROJECT_DIR$/src/classes/Comp.java" />
+        <option value="$PROJECT_DIR$/src/classes/BNException.java" />
+        <option value="$PROJECT_DIR$/src/classes/MyException.java" />
         <option value="$PROJECT_DIR$/src/classes/Main.java" />
       </list>
     </option>
@@ -533,12 +535,12 @@
       <workItem from="1433682821255" duration="11044000" />
       <workItem from="1433695185268" duration="2333000" />
       <workItem from="1433698403600" duration="713000" />
-      <workItem from="1433699806850" duration="3303000" />
+      <workItem from="1433699806850" duration="4892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36160000" />
+    <option name="totallyTimeSpent" value="37749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
@@ -611,7 +613,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/classes/BNException.java</url>
+          <line>3</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -625,7 +636,7 @@
           <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,7 +688,7 @@
           <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,7 +740,7 @@
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,7 +792,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -802,7 +813,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -823,7 +834,7 @@
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,7 +855,7 @@
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,7 +876,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,7 +887,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,7 +898,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,7 +961,7 @@
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1102,20 +1113,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#376#382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3711584">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1140,6 +1140,33 @@
             <element signature="e#2092#2093#0" expanded="true" />
             <element signature="e#2127#2128#0" expanded="true" />
             <element signature="e#2158#2159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BNException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28132388">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5579196">
+          <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
           </folding>
         </state>
       </provider>

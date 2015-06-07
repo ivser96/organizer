@@ -3,7 +3,10 @@ package classes;
 /**
  * Created by Общий on 07.06.2015.
  */
-public class MyException extends Exception {
+class MyException extends Exception {
     private int a;
-    public String toString(){ return "Input action number:"+ a + ">2"; }
+    MyException(int b){a=b;}
+    public String toString(){ if(a>2)return "Input action number:"+ a + ">2";
+        if(a<1) return "Input action number:"+ a + "<1";
+    return null;}
 }

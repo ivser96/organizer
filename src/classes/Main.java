@@ -28,8 +28,12 @@ public class Main {
         try {
             comp(action);
         } catch (MyException e) {
-            System.out.println(action + ">2");
-            System.out.println("Normal exit");
+            if(action>2){
+                System.out.println(action + ">2");}
+            if(action<1){
+                System.out.println(action + "<1");}
+
+            System.out.println("Exit");
         }
 
 
@@ -102,6 +106,8 @@ public class Main {
 
     static void comp(int a) throws MyException {
         if (a > 2)
-            throw new MyException();
+            throw new MyException(a);
+        if (a < 1)
+            throw new MyException(a);
     }
 }

@@ -16,7 +16,6 @@ public class Main {
         users.add(new User("Ivan", "12345"));
         users.add(new User("Dima", "dimadima"));
         users.add(new User("Nikita", "negr"));
-        users.add(new User("admin", "admin"));
 
         System.out.println("Hello!");
         System.out.println("What do you want?");
@@ -24,12 +23,12 @@ public class Main {
         System.out.println("2. Sign up.");
         int action = input.nextInt();
 
-        switch(action) {
+        switch (action) {
             case 1:
                 System.out.println("Enter name: ");
-                String inputLogin=input.next();
+                String inputLogin = input.next();
                 System.out.println("Enter password: ");
-                String inputPass=input.next();
+                String inputPass = input.next();
                 signIn(inputLogin, inputPass);
                 break;
             case 2:
@@ -43,20 +42,25 @@ public class Main {
 
     private static void signIn(String inputLogin, String inputPass) {
 
-        for(User curUser : users) {
-            if(curUser.getLogin().equals(inputLogin)) {
-                if(curUser.getPassword().equals(inputPass)) {
-                    loginUser = curUser;
-                    System.out.println("Welcome, " + curUser.name + "!");
-                    break;
+        for (User curUser : users) {
+            try {
+                if (curUser.getLogin().equals(inputLogin)) {
+                    if (curUser.getPassword().equals(inputPass)) {
+                        loginUser = curUser;
+                        System.out.println("Welcome, " + curUser.name + "!");
+                        break;
+                    } else {
+                        System.out.println("ERROR. Failed password");
+                        break;
+                    }
                 }
-                else {
-                    System.out.println("ERROR. Failed password");
-                    break;
-                }
+            } catch (NullPointerException e) {
+                System.out.println("ERROR:" + e);
             }
         }
     }
+
+
 
     private static void signUp() {
         String login = input.nextLine();

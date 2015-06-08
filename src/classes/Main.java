@@ -16,9 +16,9 @@ public class Main {
     private static ArrayList<User> users = new ArrayList<User>();
 
     public static void main(String[] args) throws FileNotFoundException, MyException {
-        users.add(new User("Ivan", "12345"));
-        users.add(new User("Dima", "dimadima"));
-        users.add(new User("Nikita", "432333"));
+        users.add(new User("Ivan", "030296"));
+        users.add(new User("Dima", "280296"));
+        users.add(new User("Nikita", "300896"));
 
         System.out.println("Hello!");
         System.out.println("What do you want?");

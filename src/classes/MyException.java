@@ -4,9 +4,8 @@ package classes;
  * Created by Общий on 07.06.2015.
  */
 class MyException extends Exception {
-    private int a;
-    MyException(int b){a=b;}
-    public String toString(){ if(a>2)return "Input action number:"+ a + ">2";
-        if(a<1) return "Input action number:"+ a + "<1";
+    private String a;
+    MyException(String b){a=b;}
+    public String toString(){ if(!(a.equals("2")))if(!(a.equals("1")))return "Input action number is wrong";
     return null;}
 }

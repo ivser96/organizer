@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 /**
- * Created by Общий on 05.06.2015.
+ * Created by пїЅпїЅпїЅпїЅпїЅ on 05.06.2015.
  */
  public class User {
 
@@ -17,13 +17,13 @@ import java.util.Scanner;
     public String name;
     public String surname;
     private String password;
-
+    public boolean adm;
     public ArrayList<User> users = new ArrayList<User>();
-    private ArrayList<Event> events = new ArrayList<Event>();
-    private ArrayList<Business> businesses = new ArrayList<Business>();
+    public ArrayList<Event> events = new ArrayList<Event>();
+    public ArrayList<Business> businesses = new ArrayList<Business>();
 
-    public User(String name, String password) {
-        this.login = name;
+    public User(String login, String password) {
+        this.login = login;
         this.password = password;
     }
 

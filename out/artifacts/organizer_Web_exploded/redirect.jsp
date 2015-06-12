@@ -9,7 +9,9 @@
 <jsp:forward page="/redirect"></jsp:forward>
 <html>
 <head>
-    <title></title>
+    <title>
+
+    </title>
 </head>
 <body>
 

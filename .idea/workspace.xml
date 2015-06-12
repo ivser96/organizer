@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97becebc-d525-431b-b871-86f6859f4f4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/classes/MyException1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="DELETED" beforePath="D:\Users\Иван\Documents\GitHub\organizer\db.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/WEB-INF/classes/classes/Main.class" afterPath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/WEB-INF/classes/classes/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/organizer/classes/Main.class" afterPath="$PROJECT_DIR$/out/production/organizer/classes/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/organizer/classes/MyException.class" afterPath="$PROJECT_DIR$/out/production/organizer/classes/MyException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/organizer/classes/User.class" afterPath="$PROJECT_DIR$/out/production/organizer/classes/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/Main.java" afterPath="$PROJECT_DIR$/src/classes/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/MyException.java" afterPath="$PROJECT_DIR$/src/classes/MyException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/User.java" afterPath="$PROJECT_DIR$/src/classes/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/redirect.jsp" afterPath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/redirect.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/redirect.jsp" afterPath="$PROJECT_DIR$/web/redirect.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/organizer_Web_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/CD.uml" afterPath="$PROJECT_DIR$/src/classes/CD.uml" />
     </list>
     <ignored path="organizer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,14 +72,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.36">
-              <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="161" column="45" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CD.uml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/classes/CD.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="-147.16666666666697" y="1052.3333333333333">classes.MyException1</node>
+                <node x="138.6111111111111" y="0.0">classes.Event</node>
+                <node x="-143.8333333333337" y="1162.3333333333328">classes.MyException</node>
+                <node x="83.0" y="290.0">classes.Business</node>
+                <node x="70.0" y="1023.0">classes.Main</node>
+                <node x="0.0" y="457.0">classes.User</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="classes.Business" target="classes.Event">
+                  <point x="0.0" y="-48.5" />
+                  <point x="170.5" y="270.0" />
+                  <point x="161.8611111111111" y="270.0" />
+                  <point x="-116.25" y="115.0" />
+                </edge>
+                <edge source="classes.Main" target="classes.MyException">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="classes.User" target="classes.Event">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="classes.Event" target="classes.User">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="classes.User" target="classes.Business">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="classes.Main" target="classes.MyException1">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="classes.Main" target="classes.User">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="688.6666666666656" y="654.3333333333329" />
+              <SelectedNodes>
+                <node>classes.Event</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Methods</Category>
+                <Category>Constructors</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -411,7 +454,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/classes/Servlets/servlet-api.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/classes/CD.png" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="recentsLimit" value="5" />
@@ -815,12 +858,12 @@
       <workItem from="1434042491955" duration="2048000" />
       <workItem from="1434044747385" duration="1876000" />
       <workItem from="1434047381625" duration="9611000" />
-      <workItem from="1434099401103" duration="24253000" />
+      <workItem from="1434099401103" duration="24683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84389000" />
+    <option name="totallyTimeSpent" value="84819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1206,56 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/CD.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="129.44444444444443" y="0.0">classes.Event</node>
-            <node x="120.0" y="1001.0">classes.Main</node>
-            <node x="73.0" y="290.0">classes.Business</node>
-            <node x="0.0" y="457.0">classes.User</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="classes.Business" target="classes.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="160.5" y="270.0" />
-              <point x="152.69444444444443" y="270.0" />
-              <point x="-116.25" y="115.0" />
-            </edge>
-            <edge source="classes.User" target="classes.Event">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="classes.Event" target="classes.User">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="classes.User" target="classes.Business">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="classes.Main" target="classes.User">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="419.0" y="655.0" />
-          <SelectedNodes>
-            <node>classes.Event</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Business.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39766082">
@@ -1395,11 +1388,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.36">
-          <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="45" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CD.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="-147.16666666666697" y="1052.3333333333333">classes.MyException1</node>
+            <node x="138.6111111111111" y="0.0">classes.Event</node>
+            <node x="-143.8333333333337" y="1162.3333333333328">classes.MyException</node>
+            <node x="83.0" y="290.0">classes.Business</node>
+            <node x="70.0" y="1023.0">classes.Main</node>
+            <node x="0.0" y="457.0">classes.User</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="classes.Business" target="classes.Event">
+              <point x="0.0" y="-48.5" />
+              <point x="170.5" y="270.0" />
+              <point x="161.8611111111111" y="270.0" />
+              <point x="-116.25" y="115.0" />
+            </edge>
+            <edge source="classes.Main" target="classes.MyException">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="classes.User" target="classes.Event">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="classes.Event" target="classes.User">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="classes.User" target="classes.Business">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="classes.Main" target="classes.MyException1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="classes.Main" target="classes.User">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="688.6666666666656" y="654.3333333333329" />
+          <SelectedNodes>
+            <node>classes.Event</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

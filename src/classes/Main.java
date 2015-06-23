@@ -17,6 +17,11 @@ public class Main {
     private static User loginUser;
     private static int log = 0;
     private static ArrayList<User> users = new ArrayList<User>();
+    static{
+        users.add(new User("aaa", "aaa"));
+        users.add(new User("sss", "sss"));
+        System.out.println("Users size: " + users.size());
+    }
     public static int maxid;
     public static void main(String[] args) throws Exception{
         String st;
@@ -74,7 +79,7 @@ public class Main {
 
     }
 
-    private static int signIn(String inputLogin, String inputPass) {
+    public static int signIn(String inputLogin, String inputPass) {
 
         for (User curUser : users) {
             try {
@@ -97,6 +102,30 @@ public class Main {
             return 0;
         }
         return 1;
+    }
+    public static User signInUser(String inputLogin, String inputPass) {
+
+        for (User curUser : users) {
+//            try {
+//                exist("db1.txt");
+//            } catch (FileNotFoundException e) {
+//                System.out.println("Database error 1");
+//                return null;
+//            }
+            if (curUser.getLogin().equals(inputLogin)) {
+                if (curUser.getPassword().equals(inputPass)) {
+                    return curUser;
+//                    loginUser = curUser;
+//                    System.out.println("Welcome, " + curUser.getLogin() + "!");
+//                    break;
+                }
+            }
+        }
+        if (log == 0) {
+            System.out.println("ERROR. Failed login or password");
+            return null;
+        }
+        return loginUser;
     }
 
 

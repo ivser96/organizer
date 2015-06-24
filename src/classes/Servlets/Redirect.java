@@ -22,7 +22,7 @@ public class Redirect extends HttpServlet {
 
         User curUser = Main.signInUser(req.getParameter("login"), req.getParameter("password"));
         if(curUser == null) {
-            req.setAttribute("userName", "User");
+            req.setAttribute("userName","User");
             req.getRequestDispatcher("sgnin.jsp").forward(req, resp);
             System.out.println("Login failed");
         }

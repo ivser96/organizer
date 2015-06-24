@@ -17,7 +17,6 @@ import java.util.Scanner;
     public String name;
     public String surname;
     private String password;
-    public boolean adm;
     public ArrayList<User> users = new ArrayList<User>();
     public ArrayList<Event> events = new ArrayList<Event>();
     public ArrayList<Business> businesses = new ArrayList<Business>();

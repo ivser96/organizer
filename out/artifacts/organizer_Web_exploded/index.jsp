@@ -19,12 +19,12 @@
 
  <table>
 <tr>
-      <td>
+      <td class="s">
     <form method="post" action="/sgnin.jsp">
       <input type="submit" name="sgnin" value="SignIn">
     </form>
   </td>
-    <td>
+    <td class="s">
     <form method="post" action="/sgnup.jsp">
       <input type="submit" name="sgnup" value="SignUp">
     </form>

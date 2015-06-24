@@ -22,7 +22,9 @@ import java.util.Scanner;
     public ArrayList<Event> events = new ArrayList<Event>();
     public ArrayList<Business> businesses = new ArrayList<Business>();
 
-    public User(String login, String password) {
+    public User(String name,String surname,String login, String password) {
+        this.name = name;
+        this.surname = surname;
         this.login = login;
         this.password = password;
     }

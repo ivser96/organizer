@@ -9,27 +9,30 @@
 
 <html>
 <head>
-    <title> Органайзер</title>
+    <title></title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <section class="container">
   <div class="login">
-    <h1>Login to Organizer</h1>
-    <form method="get" action="/login">
-      <p><input type="text" name="login" value="" placeholder="Enter your login"></p>
-      <p><input type="password" name="password" value="" placeholder="Enter your password"></p>
-      <p class="remember_me">
-        <%--<label>--%>
-          <%--<input type="checkbox" name="remember_me" id="remember_me">--%>
-          <%--Remember me on this computer--%>
-        <%--</label>--%>
-      </p>
-      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+    <h1>Welcome to Organizer</h1>
+
+ <table>
+<tr>
+      <td>
+    <form method="post" action="/sgnin.jsp">
+      <input type="submit" name="sgnin" value="SignIn">
     </form>
+  </td>
+    <td>
+    <form method="post" action="/sgnup.jsp">
+      <input type="submit" name="sgnup" value="SignUp">
+    </form>
+  </td>
+</tr>
+ </table>
+</div>
   </div>
 </section>
-
 </body>
 </html>

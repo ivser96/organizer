@@ -1,4 +1,5 @@
 package classes.Servlets;
+
 import classes.Main;
 import classes.User;
 
@@ -10,30 +11,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Иван on 11.06.2015.
+ * Created by Иван on 24.06.2015.
  */
-@WebServlet("/login")
-public class Redirect extends HttpServlet {
-    public static int count=0;
-
+@WebServlet("/Reg")
+public class Reg extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Login begin");
-
+        Main.signUpUser(req.getParameter("name"),req.getParameter("surname"),req.getParameter("login"),req.getParameter("password"));
         User curUser = Main.signInUser(req.getParameter("login"), req.getParameter("password"));
-        if(curUser == null) {
-            req.setAttribute("userName", "User");
-            req.getRequestDispatcher("sgnin.jsp").forward(req, resp);
-            System.out.println("Login failed");
-        }
-        else {
             req.setAttribute("userName", curUser.getLogin());
             req.getRequestDispatcher("planner.jsp").forward(req, resp);
             System.out.println("Login success");
-        }
 
-//        count++;
-//        req.setAttribute("current_count", count);
-//        req.getRequestDispatcher("sgnin.jsp").forward(req, resp);
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 }

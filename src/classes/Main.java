@@ -18,8 +18,8 @@ public class Main {
     private static int log = 0;
     private static ArrayList<User> users = new ArrayList<User>();
     static{
-        users.add(new User("aaa", "aaa"));
-        users.add(new User("sss", "sss"));
+        users.add(new User("aaa","aaa","aaa", "aaa"));
+        users.add(new User("sss","sss","sss", "sss"));
         System.out.println("Users size: " + users.size());
     }
     public static int maxid;
@@ -134,9 +134,11 @@ public class Main {
         String login = input.next();
         System.out.println("Enter password: ");
         String pass = input.next();
-        users.add(new User(login,pass));
         db1(login,pass,st);
         signIn(login, pass);
+    }
+    public static void signUpUser(String name,String surname,String login, String password) {
+      users.add(new User(name,surname,login,password));
     }
 
    private static void exist(String fileName) throws FileNotFoundException {
@@ -242,7 +244,6 @@ public class Main {
                 case '\n':
                     password = s;
                     s = "";
-                    users.add(new User(login, password));
                     break;
                 default:
                     s1 = String.valueOf(st.charAt(i));

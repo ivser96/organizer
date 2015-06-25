@@ -17,7 +17,7 @@
 <section class="container">
   <div class="login">
     <h1>Login to Organizer</h1>
-    <form method="get" action="/login">
+    <form method="post" action="/login">
       <p><input type="text" name="login" value="" placeholder="Enter your login"></p>
       <p><input type="password" name="password" value="" placeholder="Enter your password"></p>
       <p class="remember_me">
@@ -26,8 +26,15 @@
           <%--Remember me on this computer--%>
         <%--</label>--%>
       </p>
-      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      <p class="submit"><form method="post" action="/registration.jsp"><input type="submit" name="commit" value="Sign up"></form><input type="submit" name="commit" value="Sign in"></p>
     </form>
+  </div>
+</section>
+<section class="container">
+  <div class="login">
+  <form method="post" action="/registration.jsp">
+  <p class="sgnup"><input type="submit" name="commit" value="Sign up"></p>
+  </form>
   </div>
 </section>
 

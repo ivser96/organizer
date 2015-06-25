@@ -20,15 +20,15 @@
   </tr>
   <tr>
     <td class="pl">
-<section class="container1">
-  <div class="login">
+<section  class="container1">
+  <div  class="login">
   <h1>
-Here is your information:
+Ваші особсті данні:
   </h1>
     <table>
       <tr>
         <td class="pl3">
-          Your name:
+          Ваше ім'я:
         </td>
         <td class="pl3">
           <input class="pl1" type="text" name="sgn1" value=${userName}>
@@ -38,7 +38,7 @@ Here is your information:
         </td>
       </tr><tr>
         <td class="pl3">
-          Your surname:
+          Ваше прізвище:
         </td>
         <td class="pl3">
 
@@ -49,7 +49,7 @@ Here is your information:
         </td>
       </tr><tr>
         <td class="pl3">
-          Your login:
+          Ваш логін:
         </td>
         <td class="pl3">
           <input class="pl1" type="text" name="sgn1" value=${userLogin}>
@@ -61,16 +61,28 @@ Here is your information:
       <tr>
         <td colspan="3">
           <script type="text/javascript">
-            function changeName(){
-              alert();
+            function changeName1() {
+                alert();
 //              (document.getElementById('i1').style.display='none');
-              document.getElementById('pass1').style.display='block';
-              alert();
+                document.getElementById('jjj1').innerHTML='<b>Введіть ваш старий пароль</b>';
+                document.getElementById('pass1').style.display = 'block';
+                document.getElementById('jjj2').innerHTML='<b>Введіть ваш новий пароль</b>';
+                document.getElementById('pass2').style.display = 'block';
+                document.getElementById('jjj3').innerHTML='<b>Повторіть пароль</b>';
+                document.getElementById('pass3').style.display = 'block';
+
             }
           </script>
-
+            <div id="jjj1"></div>
           <input class="pl1" id="pass1" type="password" name="password1" style="display: none;">
-          <input type="submit" name="sgnup" onclick="changeName()" value="Change password">
+            <div id="jjj2"></div>
+          <input class="pl1" id="pass2" type="password" name="password2" style="display: none;">
+            <div id="jjj3"></div>
+          <input class="pl1" id="pass3" type="password" name="password3" style="display: none;">
+
+
+          <input type="submit"   name="sgnup" onclick="changeName1()" value="Change password">
+
         </td>
       </tr>
     </table>
@@ -81,7 +93,7 @@ Here is your information:
 <section class="container1">
   <div class="login">
   <h1>
-    Here is your tasks:
+    Ваші задачі:
   </h1>
     <table>
       <tr>
@@ -97,7 +109,7 @@ Here is your information:
 <section class="container1">
   <div class="login">
   <h1>
-Here is your events:
+Ваші події:
   </h1>
     <table>
       <tr>

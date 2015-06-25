@@ -15,8 +15,7 @@
 <table width="100%">
   <tr>
     <td class="pl1" colspan="3" width="auto" height="auto">
-
-      <h1>Hello, ${userName}!</h1>
+      <h1>Hello, ${userLogin}!</h1>
     </td>
   </tr>
   <tr>
@@ -26,6 +25,55 @@
   <h1>
 Here is your information:
   </h1>
+    <table>
+      <tr>
+        <td class="pl3">
+          Your name:
+        </td>
+        <td class="pl3">
+          <input class="pl1" type="text" name="sgn1" value=${userName}>
+        </td>
+        <td class="pl3">
+            <input type="submit" name="sgnup" value="Change">
+        </td>
+      </tr><tr>
+        <td class="pl3">
+          Your surname:
+        </td>
+        <td class="pl3">
+
+          <input class="pl1" type="text" name="sgn1" value=${userSurName}>
+        </td>
+        <td class="pl3">
+            <input type="submit" name="sgnup" value="Change">
+        </td>
+      </tr><tr>
+        <td class="pl3">
+          Your login:
+        </td>
+        <td class="pl3">
+          <input class="pl1" type="text" name="sgn1" value=${userLogin}>
+        </td>
+        <td class="pl3">
+            <input type="submit" name="sgnup" value="Change">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <script type="text/javascript">
+            function changeName(){
+              alert();
+//              (document.getElementById('i1').style.display='none');
+              document.getElementById('pass1').style.display='block';
+              alert();
+            }
+          </script>
+
+          <input class="pl1" id="pass1" type="password" name="password1" style="display: none;">
+          <input type="submit" name="sgnup" onclick="changeName()" value="Change password">
+        </td>
+      </tr>
+    </table>
     </div>
 </section>
     </td>
@@ -35,6 +83,13 @@ Here is your information:
   <h1>
     Here is your tasks:
   </h1>
+    <table>
+      <tr>
+        <td colspan="3">
+          <input type="submit" name="sgnup" value="Add new task">
+        </td>
+      </tr>
+    </table>
     </div>
 </section>
     </td>
@@ -44,6 +99,13 @@ Here is your information:
   <h1>
 Here is your events:
   </h1>
+    <table>
+      <tr>
+        <td colspan="3">
+          <input type="submit" name="sgnup" value="Add new event">
+        </td>
+      </tr>
+    </table>
     </div>
 </section>
     </td>

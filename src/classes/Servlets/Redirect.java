@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Иван on 11.06.2015.
+ * Created by пїЅпїЅпїЅпїЅ on 11.06.2015.
  */
 @WebServlet("/login")
 public class Redirect extends HttpServlet {
@@ -22,12 +22,14 @@ public class Redirect extends HttpServlet {
 
         User curUser = Main.signInUser(req.getParameter("login"), req.getParameter("password"));
         if(curUser == null) {
-            req.setAttribute("userName","User");
             req.getRequestDispatcher("sgnin.jsp").forward(req, resp);
             System.out.println("Login failed");
         }
         else {
-            req.setAttribute("userName", curUser.getLogin());
+            req.setAttribute("userLogin", curUser.getLogin());
+            req.setAttribute("userName", curUser.getName());
+            req.setAttribute("userSurName", curUser.getSurname());
+            req.setAttribute("userPassword", curUser.getPassword());
             req.getRequestDispatcher("planner.jsp").forward(req, resp);
             System.out.println("Login success");
         }

@@ -1,7 +1,7 @@
 package classes.Servlets;
+
 import classes.Main;
 import classes.User;
-
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 
 import javax.servlet.ServletException;

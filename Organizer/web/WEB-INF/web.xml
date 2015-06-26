@@ -12,4 +12,5 @@
         <servlet-name>Redirect</servlet-name>
         <url-pattern>/redirect</url-pattern>
     </servlet-mapping>
+
 </web-app>

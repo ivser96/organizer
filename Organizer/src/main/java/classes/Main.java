@@ -8,10 +8,7 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import java.util.Scanner;
-
-
 
 
 /**
@@ -68,29 +65,30 @@ conn.close();
                     System.out.println("Please, choose right variant");
                 a = 0;
             }
-            switch (action) {
-            case "1":
+            if (action.equals("1")) {
                 int s;
                 do {
                     System.out.println("Enter login: ");
                     String inputLogin = input.next();
                     System.out.println("Enter password: ");
                     String inputPass = input.next();
-                    s=signIn(inputLogin, inputPass);
-                }while(s==0);
-                    if (!(s==2)) {
-                        System.out.println("Testing version");
-                        System.out.println("Type 0 to exit the program and click Enter");
-                        exit();
-                    }
-                break;
-            case "2":
-                signUp(st);
-                System.out.println("Testing version");
-                System.out.println("Type 0 to exit the program and click Enter");
-                exit();
-                break;
-        }
+                    s = signIn(inputLogin, inputPass);
+                } while (s == 0);
+                if (!(s == 2)) {
+                    System.out.println("Testing version");
+                    System.out.println("Type 0 to exit the program and click Enter");
+                    exit();
+                }
+            }
+            else {
+                if (action.equals("2")) {
+
+                    signUp(st);
+                    System.out.println("Testing version");
+                    System.out.println("Type 0 to exit the program and click Enter");
+                    exit();
+                }
+            }
         }while(a==0);
         String str = input.nextLine();
 
